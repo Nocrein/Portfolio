@@ -1,29 +1,75 @@
-<!-- In your head tag, link Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#Language">Language</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
 
-<section id="Language" class="section content">
-    <h2>Language</h2>
-    <div class="grid">
-        <div class="grid-item">
-            <img src="images/bash2.png" alt="Bash">
-            <h3>Bash</h3>
-            <p>Still learning but I aim to learn all available knowledge about Bash.</p>
-        </div>
-        <div class="grid-item">
-            <img src="images/clang2.png" alt="C Language">
-            <h3>C Language</h3>
-            <p>It is a tough start, but I managed to learn its basic functions and programs, especially the pointers.</p>
-        </div>
-        <div class="grid-item">
-            <img src="images/python.jpg" alt="Python">
-            <h3>Python</h3>
-            <p>I have mastered the basics of Python and am interested in creating more scripts based on it.</p>
-        </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#Language">Language</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="about" class="section content">
+            <h2>About Me</h2>
+            <p>Hello! You can call me Nocrein, an aspiring programmer with a keen interest in technology and coding. I’m excited to share my journey as I explore the world of programming and expand my skill set.</p>
+            <h3>My Journey</h3>
+            <p>I began my programming adventure with C, Python, and Bash. Each of these languages has provided me with a strong foundation and a diverse set of tools to tackle different challenges.</p>
+            <h3>What I Enjoy</h3>
+            <p>I enjoy working on projects that push my boundaries and allow me to learn new concepts. Whether it’s writing clean code in C, creating dynamic applications with Python, or automating workflows with Bash, I’m always excited to dive into new tasks and grow my expertise.</p>
+            <h3>What’s Next?</h3>
+            <p>I’m currently focused on expanding my portfolio and continuing my learning journey. My goal is to collaborate on meaningful projects and contribute to the tech community.</p>
+        </section>
+
+        <section id="Language" class="section content">
+            <h2>Language</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="images/bash2.png" alt="Bash">
+                    <h3>Bash</h3>
+                    <p>Still learning but I aim to learn all available knowledge about Bash.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/clang2.png" alt="C Language">
+                    <h3>C Language</h3>
+                    <p>It is a tough start, but I managed to learn its basic functions and programs, especially the pointers.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/python.jpg" alt="Python">
+                    <h3>Python</h3>
+                    <p>I have mastered the basics of Python and am interested in creating more scripts based on it.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section content">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, feel free to reach out through any of the platforms below:</p>
+            <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+            <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+            <p>GitHub: <a href="#">github.com/yourprofile</a></p>
+        </section>
+
     </div>
-</section>
+
+    <footer>
+        <p>&copy; 2024 Nocrein Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
