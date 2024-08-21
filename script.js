@@ -11,16 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Grid Item Click Event
-    const gridItems = document.querySelectorAll('.grid-item');
-    
-    gridItems.forEach(item => {
-        item.addEventListener('click', function() {
-            gridItems.forEach(grid => grid.classList.remove('active'));
-            this.classList.add('active');
-        });
-    });
-
     // Smooth Scroll for Navigation Links
     const navLinks = document.querySelectorAll('nav a');
     
@@ -36,12 +26,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Responsive Navigation Menu Toggle
-    const toggleButton = document.createElement('button');
-    toggleButton.textContent = 'Menu';
-    toggleButton.classList.add('menu-toggle');
-    nav.parentNode.insertBefore(toggleButton, nav);
-
-    toggleButton.addEventListener('click', function() {
-        nav.classList.toggle('active');
-    });
-});
+    const toggleButton = document.createElement
