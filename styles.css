@@ -58,18 +58,33 @@ header::before {
 nav {
     background-color: #333333; /* Dark gray background */
     padding: 10px 0;
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
-nav a {
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links a {
     color: #FFFFFF;
     text-decoration: none;
-    margin: 0 15px;
     padding: 5px;
     transition: color 0.3s ease;
 }
 
-nav a:hover {
+.nav-links a:hover {
     color: #FF6F61; /* Coral color on hover */
 }
 
@@ -175,4 +190,34 @@ footer a:hover {
     color: #FFFFFF; /* White text on hover */
 }
 
-/* Media Queries for Responsive 
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        background-color: #000000; /* Black background */
+        color: #FF6F61; /* Coral text */
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
