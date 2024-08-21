@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Sticky Navigation - Make the nav sticky on scroll
+    // Sticky Navigation
     const nav = document.querySelector('nav');
     const header = document.querySelector('header');
 
@@ -26,4 +26,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Responsive Navigation Menu Toggle
-    const toggleButton = document.createElement
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinksContainer = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', function() {
+        navLinksContainer.classList.toggle('active');
+    });
+});
