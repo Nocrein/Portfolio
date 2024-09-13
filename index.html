@@ -11,6 +11,14 @@
 </head>
 <body>
 
+    <!-- Welcome Section -->
+    <section id="welcome" class="welcome-section">
+        <div class="welcome-message">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Explore my work and skills as you scroll down.</p>
+        </div>
+    </section>
+
     <header>
         <h1>My Portfolio</h1>
     </header>
@@ -19,51 +27,97 @@
         <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#Language">Language</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <div class="container">
 
-        <section id="about" class="section content">
+        <!-- About Section -->
+        <section id="about" class="section content hidden">
             <h2>About Me</h2>
-            <p>Hello! You can call me Nocrein, an aspiring programmer with a keen interest in technology and coding. I’m excited to share my journey as I explore the world of programming and expand my skill set.</p>
+            <p>Hello! I’m Nocrein, an aspiring programmer with a passion for coding and technology. I specialize in backend development and love exploring new frameworks and languages. Let’s build something great together!</p>
         </section>
 
-        <section id="Language" class="section content">
-            <h2>Language</h2>
+        <!-- Projects Section -->
+        <section id="projects" class="section content hidden">
+            <h2>Projects</h2>
             <div class="grid">
                 <div class="grid-item">
-                    <img src="images/bash2.png" alt="Bash">
-                    <h3>Bash</h3>
-                    <p>Still learning but I aim to learn all available knowledge about Bash.</p>
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>A web application that helps users manage tasks efficiently with AI-powered recommendations.</p>
                 </div>
                 <div class="grid-item">
-                    <img src="images/clang2.png" alt="C Language">
-                    <h3>C Language</h3>
-                    <p>It is a tough start, but I managed to learn its basic functions and programs, especially the pointers.</p>
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>An innovative e-commerce platform designed to provide seamless shopping experiences.</p>
                 </div>
                 <div class="grid-item">
-                    <img src="images/python.jpg" alt="Python">
-                    <h3>Python</h3>
-                    <p>I have mastered the basics of Python and am interested in creating more scripts based on it.</p>
+                    <img src="images/project3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>A portfolio website built using modern technologies like React and Node.js.</p>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section content">
+        <!-- Skills Section -->
+        <section id="skills" class="section content hidden">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="images/python.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="skill">
+                    <img src="images/javascript.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <img src="images/bash.png" alt="Bash">
+                    <p>Bash</p>
+                </div>
+                <div class="skill">
+                    <img src="images/c.png" alt="C Language">
+                    <p>C Language</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section content hidden">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>"Working with Nocrein was an amazing experience. His attention to detail and problem-solving skills are exceptional!"</p>
+                <p>- Client A</p>
+            </div>
+            <div class="testimonial">
+                <p>"He consistently delivers high-quality work, and I would highly recommend him to anyone looking for a skilled developer."</p>
+                <p>- Client B</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section content hidden">
             <h2>Contact</h2>
-            <p>If you'd like to get in touch, feel free to reach out through any of the platforms below:</p>
-            <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
-            <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
-            <p>GitHub: <a href="#">github.com/yourprofile</a></p>
+            <p>If you'd like to get in touch, feel free to reach out through the form below:</p>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+            <p id="form-message"></p>
         </section>
 
     </div>
 
     <footer>
         <p>&copy; 2024 Nocrein Portfolio. All rights reserved.</p>
+        <a href="#" id="back-to-top">Back to Top</a>
     </footer>
 
     <!-- Link to your JavaScript file -->
