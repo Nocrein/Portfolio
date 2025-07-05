@@ -29,6 +29,66 @@
       background-position: 0% 50%;
     }
   }
+
+
+  header {
+  background-color: #0A5046;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  margin-left: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #eca219;
+  background-color: white;
+  
+  /* Base glow */
+  box-shadow: 0 0 7px #7d360a, 0 0 10px #cc7f0c;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+
+.logo:hover {
+  /* Brighter glow on hover */
+  box-shadow: 0 0 15px #b06117, 0 0 30px #8c641e, 0 0 45px #8c5a1e;
+  transform: scale(1.05); /* Optional: subtle zoom effect */
+}
+
+
+.title-wrapper {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.site-title {
+  color: white;
+  font-size: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* Reveal when the wrapper is hovered */
+.title-wrapper:hover .site-title {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
   main {
   margin-top: 80px;
 }
