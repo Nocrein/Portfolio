@@ -180,12 +180,12 @@ footer {
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    padding: 15px;
+    padding: 10px;
   }
 
   .nav-container {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
   }
 
   .hero-text-overlay h1 {
