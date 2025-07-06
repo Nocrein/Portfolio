@@ -20,9 +20,9 @@ body {
 .video-hero {
   position: relative;
   width: 100%;
-  height: 100vh; /* or 70vh if you want shorter */
+  height: 100vh;
   overflow: hidden;
-  z-index: -1;
+  z-index: 0;
 }
 
 .video-hero video {
@@ -34,6 +34,36 @@ body {
   object-fit: cover;
 }
 
+.hero-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  animation: fadeIn 2s ease forwards;
+  opacity: 0;
+}
+
+.hero-text-overlay h1 {
+  font-size: 6rem;
+  margin-bottom: 15px;
+}
+
+.hero-text-overlay p {
+  font-size: 1.2rem;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
 /* Header */
 header {
   background: rgba(0, 0, 0, 0.4);
@@ -43,7 +73,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 8% 20px 11%;
-  position: absolute; /* So it sits on top of the video */
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 10;
@@ -121,4 +151,52 @@ header {
 .title-wrapper:hover .site-title {
   transform: translateX(0);
   opacity: 1;
+}
+
+/* Main Sections */
+main {
+  padding: 60px 10%;
+  background: #1d570a;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+h2 {
+  color: #eca219;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #000;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-text-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text-overlay p {
+    font-size: 1rem;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
 }
